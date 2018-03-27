@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0AD117DD206AA339003B5513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD117DC206AA339003B5513 /* AppDelegate.swift */; };
-		0AD117DF206AA339003B5513 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD117DE206AA339003B5513 /* MasterViewController.swift */; };
 		0AD117E1206AA339003B5513 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD117E0206AA339003B5513 /* DetailViewController.swift */; };
 		0AD117E4206AA339003B5513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD117E2206AA339003B5513 /* Main.storyboard */; };
 		0AD117E6206AA339003B5513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD117E5206AA339003B5513 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		0AD117D9206AA339003B5513 /* MovieQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD117DC206AA339003B5513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AD117DE206AA339003B5513 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		0AD117E0206AA339003B5513 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0AD117E3206AA339003B5513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AD117E5206AA339003B5513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				0AD117DC206AA339003B5513 /* AppDelegate.swift */,
-				0AD117DE206AA339003B5513 /* MasterViewController.swift */,
 				0AD117E0206AA339003B5513 /* DetailViewController.swift */,
 				0AD117E2206AA339003B5513 /* Main.storyboard */,
 				0AD117E5206AA339003B5513 /* Assets.xcassets */,
@@ -140,7 +137,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD117E1206AA339003B5513 /* DetailViewController.swift in Sources */,
-				0AD117DF206AA339003B5513 /* MasterViewController.swift in Sources */,
 				0AD117DD206AA339003B5513 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +280,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.schiesla.MovieQuotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -298,7 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.schiesla.MovieQuotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
