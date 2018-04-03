@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A1F4FA5206D3683002CFCAA /* MovieQuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F4FA4206D3683002CFCAA /* MovieQuotesTableViewController.swift */; };
-		0A1F4FA7206D3989002CFCAA /* MovieQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F4FA6206D3989002CFCAA /* MovieQuote.swift */; };
 		0AB0EEC72073D12500414CEB /* MovieQuoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0EEC62073D12500414CEB /* MovieQuoteDetailViewController.swift */; };
+		0AB0EECA2073DC0B00414CEB /* MovieQuotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0EEC82073DC0B00414CEB /* MovieQuotes.xcdatamodeld */; };
 		0AD117DD206AA339003B5513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD117DC206AA339003B5513 /* AppDelegate.swift */; };
 		0AD117E1206AA339003B5513 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD117E0206AA339003B5513 /* DetailViewController.swift */; };
 		0AD117E4206AA339003B5513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD117E2206AA339003B5513 /* Main.storyboard */; };
@@ -20,8 +20,8 @@
 
 /* Begin PBXFileReference section */
 		0A1F4FA4206D3683002CFCAA /* MovieQuotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuotesTableViewController.swift; sourceTree = "<group>"; };
-		0A1F4FA6206D3989002CFCAA /* MovieQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuote.swift; sourceTree = "<group>"; };
 		0AB0EEC62073D12500414CEB /* MovieQuoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuoteDetailViewController.swift; sourceTree = "<group>"; };
+		0AB0EEC92073DC0B00414CEB /* MovieQuotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieQuotes.xcdatamodel; sourceTree = "<group>"; };
 		0AD117D9206AA339003B5513 /* MovieQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD117DC206AA339003B5513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AD117E0206AA339003B5513 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				0AD117DC206AA339003B5513 /* AppDelegate.swift */,
+				0AB0EEC82073DC0B00414CEB /* MovieQuotes.xcdatamodeld */,
 				0AD117E0206AA339003B5513 /* DetailViewController.swift */,
 				0AD117E2206AA339003B5513 /* Main.storyboard */,
 				0A1F4FA4206D3683002CFCAA /* MovieQuotesTableViewController.swift */,
@@ -71,7 +72,6 @@
 				0AD117E5206AA339003B5513 /* Assets.xcassets */,
 				0AD117E7206AA339003B5513 /* LaunchScreen.storyboard */,
 				0AD117EA206AA339003B5513 /* Info.plist */,
-				0A1F4FA6206D3989002CFCAA /* MovieQuote.swift */,
 			);
 			path = MovieQuotes;
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 			files = (
 				0AD117F1206AA741003B5513 /* TempTableViewController.swift in Sources */,
 				0AD117E1206AA339003B5513 /* DetailViewController.swift in Sources */,
-				0A1F4FA7206D3989002CFCAA /* MovieQuote.swift in Sources */,
+				0AB0EECA2073DC0B00414CEB /* MovieQuotes.xcdatamodeld in Sources */,
 				0AB0EEC72073D12500414CEB /* MovieQuoteDetailViewController.swift in Sources */,
 				0AD117DD206AA339003B5513 /* AppDelegate.swift in Sources */,
 				0A1F4FA5206D3683002CFCAA /* MovieQuotesTableViewController.swift in Sources */,
@@ -336,6 +336,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0AB0EEC82073DC0B00414CEB /* MovieQuotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0AB0EEC92073DC0B00414CEB /* MovieQuotes.xcdatamodel */,
+			);
+			currentVersion = 0AB0EEC92073DC0B00414CEB /* MovieQuotes.xcdatamodel */;
+			path = MovieQuotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0AD117D1206AA339003B5513 /* Project object */;
 }
