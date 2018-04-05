@@ -39,6 +39,8 @@ class MovieQuoteDetailViewController: UIViewController {
             self.movieQuote?.quote = quoteTextField.text!
             self.movieQuote?.movie = movieTextField.text!
             self.updateView()
+             (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            
         }
         
         alertController.addAction(createQuoteAction)
@@ -54,6 +56,7 @@ class MovieQuoteDetailViewController: UIViewController {
     func updateView() {
         quoteContentLabel.text = movieQuote?.quote
         movieContentLabel.text = movieQuote?.movie
+        
     }
 
 }
