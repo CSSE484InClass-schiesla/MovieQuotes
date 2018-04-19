@@ -16,6 +16,7 @@ class MovieQuotesTableViewController: UITableViewController {
     
     var cellIdentifier = "MovieQuoteCell"
     var noCellIdentifier = "NoMovieQuotesCell"
+    var showDetailSegueIdentifier = "ShowDetail"
     var movieQuotes = [MovieQuote]()
 
     override func viewDidLoad() {
@@ -46,7 +47,9 @@ class MovieQuotesTableViewController: UITableViewController {
                     self.quoteRemoved(docChange.document)
                 }
             }
-            //need sort function
+            self.movieQuotes.sort(by: {(mq1, mq2) -> Bool in
+                return mq1.created! > mq2.created!
+            })
             self.tableView.reloadData()
         })
     }
@@ -153,7 +156,7 @@ class MovieQuotesTableViewController: UITableViewController {
     }
  
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -162,11 +165,11 @@ class MovieQuotesTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == showDetailSegueIdentifier {
             if let indexPath = tableView.indexPathForSelectedRow {
-                (segue.destination as! MovieQuotesTableViewController).movieQuoteRef = quotesRef.document(movieQuotes[indexPath.row].id!)
+                (segue.destination as! MovieQuoteDetailViewController).movieQuoteRef = quotesRef.document(movieQuotes[indexPath.row].id!)
             }
         }
     }
- */
+ 
  
 
 }
